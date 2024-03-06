@@ -8,4 +8,5 @@ export const Calculator = styled.div`
   height: 60dvh;
   background-color: #282c34;
   color: white;
+  position: relative;
 `;

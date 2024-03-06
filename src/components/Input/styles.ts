@@ -1,18 +1,23 @@
 import styled from "styled-components";
 
 export const Input = styled.input`
-  position: relative;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  background-color: #1a1a1a;
-  color: #fff;
-  transition: border-color 0.25s;
   width: 100%;
+  height: 2em;
+  border-radius: 1px;
+  background-color: #4f4f4f;
   top: 0;
-  &:focus {
-    border-color: #646cff;
-  }
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  font-size: 24px;
+  font-family: "Roboto";
+
+  width: 100%;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
 `;
