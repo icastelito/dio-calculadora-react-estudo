@@ -1,6 +1,12 @@
 import * as S from "./styles";
+import { MouseEvent } from "react";
 
-const Button = ({ label, onClick }) => {
+interface ButtonProps {
+  label: string;
+  onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
+}
+
+const Button = ({ label, onClick }: ButtonProps) => {
   return (
     <S.ButtonContainer onClick={onClick} type="button">
       {label}
